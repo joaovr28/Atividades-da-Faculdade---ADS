@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade_04</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      color: brown;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #texto {
+      display: flex;
+      flex-direction: row;
+      text-align: justify;
+      align-items: flex-start;
+      margin: 29px;
+    }
+    #link {
+      display: flex;
+      flex-direction: row;
+      margin: 29px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: rgb(2, 14, 14);
+      text-decoration: none;
+    }
+    #link:hover{
+      color: blue;
+      font-size: 20px;
+    }
+    button {
+      width: 200px;
+      height: 25px;
+      margin-top: 29px;
+      margin-left: 29px;
+      background-color: rgb(29, 228, 152);
+      color: rgb(24, 42, 28);
+      font:message-box ;
+      border: none;
+    }
+    button:hover{
+      scale: 110%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1><b>COMUNICADO IMPORTANTE!</b></h1>
+    <p id="texto">Informamos que há previsão de fortes chuvas para as próximas horas na região. Recomendamos atenção redobrada, evitando deslocamentos desnecessários e mantendo-se em locais seguros.
+    Em caso de emergência, entre em contato com a Defesa Civil pelo número 199 ou com o Corpo de Bombeiros pelo 193.</p>
+  </div>
+    <button onclick="mostrarAviso()"></a>Confirmar leitura
+    </button>
+  <p>
+    <a id="link" href="https://www.apac.pe.gov.br" target="_blank">Saber Mais!
+    </a>
+  </p>
+  <script>
+    function mostrarAviso(){
+      let resposta = confirm('Confirma que leu e entendeu o aviso?')
+      if(resposta){
+        alert('certo, fique em um local protegido, e não se arrisque')
+      } else {
+        alert('se precisar, leia novamente ou clique no no link para mais informações!')
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade_03</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+ #conteiner {
+    display: flex;          
+    flex-direction: row;   
+    align-items: flex-start;
+    gap: 20px;             
+    margin: 10pt;
+}
+
+#texto {
+    max-width: 400px;       
+}
+
+#texto h1 {
+    margin-bottom: 10px;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#botao {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    background-color: cadetblue;
+    color: rgb(255, 255, 255);
+}
+#botao:hover{
+    padding: 12px;
+    background-color: rgb(65, 115, 117);
+}
+
+  </style>
+</head>
+<body>
+  
+  <div id="conteiner">
+  <img src="https://m.media-amazon.com/images/I/71Zs5DfhWCL._SY385_.jpg" alt="imagem do software Photoshop">
+
+  <div id="texto">
+    <h1><i>Adobe Photoshop 2020</i></h1>
+     <hr>
+    <p id="descricao">
+      O Adobe Photoshop é um software de edição e manipulação de imagens digitais, amplamente utilizado por designers, fotógrafos e profissionais criativos. Ele oferece ferramentas avançadas para tratamento de fotos, criação de composições gráficas, retoques, montagem de layouts e produção de artes visuais.
+      <br><br>
+      Sua principal força está na versatilidade: permite desde ajustes simples de cor e iluminação até manipulações complexas com camadas, filtros e efeitos especiais. Além disso, integra-se com outros produtos da Adobe, tornando-se parte essencial de fluxos de trabalho em design gráfico, publicidade, fotografia e produção digital.
+    </p>
+    <button id="botao" onclick="clicar()">Comprar Agora
+  </button>
+  </div>
+</div>
+  <script>
+    function clicar(){
+      alert('Software adquirido')
+    }
+  </script>
+</body>
+</html>
