@@ -1,2 +1,4 @@
 # Atividades da Faculdade - ADS
- minhas atividades da fuculdade de Análise e Desenvolvimento de sSstems
+
+minhas atividades da faculdade de Análise e Desenvolvimento de Sistemas!
+
