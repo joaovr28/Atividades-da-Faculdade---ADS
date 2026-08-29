@@ -1,0 +1,15 @@
+#my_photo {
+  width: 300px;
+}
+#my_link .link {
+  text-decoration: none;
+  color: chocolate;
+  font-size: 20pt;
+  padding: 20px;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 20pt;
+}
