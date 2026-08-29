@@ -1,0 +1,38 @@
+ #img_first {
+        width: 400px;
+      }
+      #music_name {
+        font-size: large;
+      }
+      #sub_title_music {
+        width: 300px;
+        padding: 20px;
+        text-align: justify;
+      }
+      #conteiner_1 {
+        text-align: center;
+        padding: 12px;
+      }
+      #conteiner_2 {
+        display: flex;
+        flex-direction: row;
+        width: 300;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+      }
+      #img_2 {
+        display: flex;
+        width: 200px;
+      }
+      #header_2 {
+        text-align: center;
+      }
+      #link_details {
+        background-color: rgb(255, 255, 191);
+        font-size: large;
+        color: chocolate;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+      }
