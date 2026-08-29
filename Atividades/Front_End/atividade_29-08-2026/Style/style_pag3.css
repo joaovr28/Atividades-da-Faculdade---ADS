@@ -13,3 +13,11 @@
   padding: 20px;
   font-size: 20pt;
 }
+#pag_first {
+  background-color: rgb(255, 255, 191);
+  font-size: large;
+  color: chocolate;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+}
