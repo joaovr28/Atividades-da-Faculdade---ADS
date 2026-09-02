@@ -8,14 +8,23 @@ body {
   align-items: center;
   height: 100vh;
 }
+#img1 {
+  margin-left: 100px;
+  width:500px;
+  height: 60vh;
+  box-shadow: 5px 5px 30px gray;
+}
 .conteiner {
   display: flex;
-  border-radius: 20px;
+  border-radius:0 0 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  width: 500px;
+  width: 50%px;
   height: 60vh;
-  background-color: cadetblue;
+  box-shadow: 5px 5px 30px gray;
+  background:linear-gradient(45deg, rgb(79, 177, 181), rgb(25, 82, 84)) ;
 }
+
+
