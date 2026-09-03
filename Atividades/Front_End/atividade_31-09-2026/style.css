@@ -146,5 +146,6 @@ input::placeholder {
   color: rgba(235, 255, 121, 0.982);
   margin-left: 4px;
   scale: 105%;
+  margin-left: 15px;
 }
 
