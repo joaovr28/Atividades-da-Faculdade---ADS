@@ -7,22 +7,29 @@
     <title>Página de Login</title>
   </head>
   <body>
-    <img id="img1" src="img/ChatGPT Image 2 de set. de 2026, 19_12_01.png" alt="">
+    <img
+      id="img1"
+      src="img/ChatGPT Image 2 de set. de 2026, 19_12_01.png"
+      alt="" />
     <div class="conteiner">
       <div id="conteiner_loginPage"></div>
-      <div><h1>Entrar na sua conta</h1></div>
-      <div class="input input_user">
-        <label for="input_txt">E-mail ou Usuário</label>
-        <input id="input_txt" type="text" />
+      <div id="title"><h1>Entrar na conta</h1></div>
+      <div class="input input_user_conteiner">
+        <label class="label_txt" for="input_txt">E-mail ou Usuário:</label
+        ><br />
+        <input id="input_txt" type="text" placeholder="   Digite seu E-mail ou Usuário"/>
       </div>
-      <div class="input input_password">
-        <label for="input_password">Senha</label>
-        <input id="input_password" type="password" />
-        <p>Esqueceu a Senha?</p>
+      <div class="input input_password_conteiner">
+        <label class="label_txt" for="input_password">Senha:</label><br />
+        <input id="input_password" type="password" placeholder="   Digite sua Senha" autofocus/>
+        <a href="" id="Forgotten_pass" target="_blank">Esqueceu a Senha?</a>
       </div>
-      <div><button id="button_entrar">Entrar</button></div>
+      <div><input id="button_enter" value="Entrar" type="submit"></div>
       <div>
-        <p>Não tem conta? <a id="link_cadastro" href="" target="_blank">Cadastre-se</a></p>
+        <p class="input_question">
+          Não tem conta?
+          <a id="link_cadastro" href="" target="_blank">Cadastre-se</a>
+        </p>
       </div>
     </div>
   </body>
