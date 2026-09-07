@@ -1,112 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-}
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-.header {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  justify-content: center;
-  font-family: sans-serif;
-  font-size: 14pt;
-  font-weight: bold;
-  color: rgb(238, 255, 255);
-}
-.conteiner {
-  width: 80%;
-  max-width: 800px;
-  min-width: 400px;
-  height: 80vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: str;
-  border-radius: 20px;
-  gap: 20px;
-  background-color: rgb(0, 147, 130);
+  font-family: Montserrat, sans-serif;
 }
 
-form {
-  min-width: 200px;
+body {
+  background-color: #2c3e50;
+  color: #1a1a1a;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  height: 400px;
-  width: 80%;
-  gap: 30px;
+  align-items: center;
+  min-height: 100vh;
 }
-.conteiner_input {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+
+/* título */
+header {
+  color: #1a1a1a;
+  text-align: center;
   padding: 20px;
-}
-.terms_check {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 70%;
-}
-.conteiner_input > input {
-  width: 100%;
-  height: 40px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
+  gap: 10px;
   font-size: 1.2rem;
 }
 
-.conteiner_input > label {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: column;
-  color: antiquewhite;
-  width: 100%;
+label {
   margin-bottom: 5px;
+  font-weight: 500;
 }
-.button_env {
-  width: 70%;
-  height: 30px;
-  border-radius: 5px;
-  background-color: rgb(3, 47, 47);
+
+input::placeholder {
+  color: #666;
+}
+
+.conteiner {
+  background: #ffffff;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-}
-.button_env > button {
-  cursor: pointer;
-  width: 100%;
-  font-weight: 700;
-  text-transform: uppercase;
+  justify-content: center;
+  max-width: 600px;
+  width: 90%;
   padding: 20px;
-  height: 30px;
   border: none;
-  color: aliceblue;
-  background-color: rgb(3, 47, 47);
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+h2 {
+  font-size: 15pt;
+  padding: 10px;
+}
+/* campo nome e email */
+.name_email {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  gap: 10px;
 }
-.select {
+
+.name_email > a {
+  color: #0066cc;
+  text-align: end;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.name_email > a:hover {
+  text-decoration: underline;
+}
+
+/* div com os inputs */
+.input_group {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input_group > input {
+  background-color: #ffffff;
+  color: #1a1a1a;
   width: 100%;
-  flex-basis: 200px;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* informações adicionais */
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  border: none;
+}
+
+.date_gender {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="date"],
+select {
+  border: 1px solid #555;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.btn_cadastrar,
+.terms_check,
+.tem_conta {
+  display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.btn_cadastrar > button {
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  width: 80%;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn_cadastrar > button:hover {
+  background-color: #3498db;
+}
+
+.tem_conta a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.tem_conta a:hover {
+  text-decoration: underline;
+}
+.terms_check > label > em > a {
+  text-decoration: none;
 }
