@@ -22,22 +22,25 @@ body {
 }
 .conteiner {
   width: 80%;
+  max-width: 800px;
+  min-width: 400px;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: str;
   border-radius: 20px;
   gap: 20px;
   background-color: rgb(0, 147, 130);
 }
+
 form {
+  min-width: 200px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   height: 400px;
   width: 80%;
   gap: 30px;
@@ -47,27 +50,63 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 .terms_check {
-display: flex;
-flex-direction: row;
-justify-content: center;
-flex-wrap: wrap;
-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
 }
 .conteiner_input > input {
   width: 100%;
   height: 40px;
   border: none;
+  outline: none;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .conteiner_input > label {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
   flex-direction: column;
   color: antiquewhite;
   width: 100%;
   margin-bottom: 5px;
+}
+.button_env {
+  width: 70%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(3, 47, 47);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.button_env > button {
+  cursor: pointer;
+  width: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px;
+  height: 30px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(3, 47, 47);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.select {
+  display: flex;
+  width: 100%;
+  flex-basis: 200px;
+  justify-content: center;
 }

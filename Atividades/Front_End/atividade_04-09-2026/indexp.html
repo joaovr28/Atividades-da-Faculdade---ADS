@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Página de Cadastro</title>
+  </head>
+  <body>
+    <form action="POST" class="conteiner">
+      <header>
+        <h1>Criar sua conta</h1>
+        <p>Preencha seus dados para começar</p>
+      </header>
+      <section class="name_email">
+        <div class="input_group">
+          <label for="">Nome Completo:</label>
+          <input type="text" placeholder="Digite seu nome" />
+        </div>
+        <div class="input_group">
+          <label for="">Email:</label>
+          <input type="email" placeholder="Digite seu email" />
+        </div>
+        <a href="">Esqueceu a senha?</a>
+      </section>
+      <fieldset>
+        <div>
+          <label for="date">Data de Nascimento:</label>
+          <input type="date" name="" id="date" />
+        </div>
+        <div>
+          <label for="select_gender">Gênero:</label>
+          <select name="select" id="select_gender" placeholder="Selecione">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+            <option value="Prefiro não dizer">Prefiro não dizer</option>
+          </select>
+        </div>
+      </fieldset>
+      <div class="terms">
+        <h2>Termos de uso</h2>
+        <input type="checkbox" name="" id="" />
+        <label for="">Aceitar os termos</label>
+      </div>
+      <div class="btn_cadastrar">
+        <button>Cadastrar</button>
+      </div>
+      <div class="tem_conta">
+        <p>Já tem contat?<a href="">Entrar</a></p>
+      </div>
+    </form>
+  </body>
+</html>
