@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Manager - Manutenção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de Ordens de Serviço</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Buscar por cliente ou ID...">
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Formulário Dinâmico -->
+        <section class="form-section">
+            <h2>Nova Ordem de Serviço</h2>
+            <form id="osForm">
+                <div class="form-group">
+                    <label for="cliente">Nome do Cliente</label>
+                    <input type="text" id="cliente" required placeholder="Ex: João Victor">
+                </div>
+                
+                <div class="form-group">
+                    <label for="categoria">Categoria do Equipamento</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="impressora">Impressora Tanque de Tinta</option>
+                        <option value="refrigerador">Refrigerador</option>
+                        <option value="notebook">Notebook</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="falha">Diagnóstico / Falha Relatada</label>
+                    <select id="falha" required disabled>
+                        <option value="">Selecione a categoria primeiro...</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Criar OS</button>
+            </form>
+        </section>
+
+        <!-- Dashboard Kanban -->
+        <section class="kanban-board">
+            <div class="kanban-column" data-status="entrada">
+                <h3>Entrada</h3>
+                <div class="kanban-cards" id="col-entrada"></div>
+            </div>
+            <div class="kanban-column" data-status="aguardando">
+                <h3>Aguardando Peças</h3>
+                <div class="kanban-cards" id="col-aguardando"></div>
+            </div>
+            <div class="kanban-column" data-status="bancada">
+                <h3>Em Bancada</h3>
+                <div class="kanban-cards" id="col-bancada"></div>
+            </div>
+            <div class="kanban-column" data-status="concluido">
+                <h3>Concluído</h3>
+                <div class="kanban-cards" id="col-concluido"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Container de Notificações (Tratamento de Exceções/Sucesso) -->
+    <div id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
