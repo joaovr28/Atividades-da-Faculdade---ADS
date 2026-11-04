@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Link to={''}></Link>
+      <Link to={"/"}>Home</Link>;
     </>
   )
 }
