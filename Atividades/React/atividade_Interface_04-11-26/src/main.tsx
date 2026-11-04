@@ -4,9 +4,9 @@ import "./index.css";
 import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "./Views/Home.tsx";
+import Home from "./Views/home.tsx";
 import Login from "./Views/Login.tsx";
-import Contatos from "./Views/";
+import Contatos from "./Views/contatos.tsx";
 import Servicos from "./Views/Servicos.tsx";
 import Mais_informacoes from "./Views/Mais_informacoes.tsx";
 
